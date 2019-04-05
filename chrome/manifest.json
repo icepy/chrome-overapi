@@ -1,0 +1,32 @@
+{
+  "version": "0.0.1",
+  "name": "OverAPI",
+  "manifest_version": 2,
+  "description": "OverAPI是一个API文档浏览扩展",
+  "default_locale": "zh_CN",
+  "browser_action": {
+    "default_title": "OverAPI",
+    "default_popup": "popup/index.html"
+  },
+  "icons": {
+    "16": "img/icon_54.png",
+    "48": "img/icon_144.png"
+  },
+  "web_accessible_resources": [
+    "popup/style.css"
+  ],
+  "background": {
+    "persistent": true,
+    "scripts": [
+      "background.bundle.js"
+    ]
+  },
+  "permissions": [
+    "tabs",
+    "storage",
+    "<all_urls>",
+    "http://*/*",
+    "https://*/*"
+  ],
+  "content_security_policy": "script-src 'self' 'unsafe-eval'; object-src 'self'; "
+}
