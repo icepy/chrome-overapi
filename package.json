@@ -1,8 +1,8 @@
 {
   "name": "chrome-overapi",
   "version": "1.0.0",
-  "description": "OverAPI Chrome Extension",
-  "main": "webpack.config.js",
+  "description": "提供快速访问 API 文档浏览的 chrome extension，前端 first",
+  "main": "",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "MODE=development webpack -w --mode=development",

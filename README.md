@@ -2,7 +2,7 @@
 
 ![img](https://img.shields.io/github/license/icepy/chrome-overapi.svg) ![img](https://img.shields.io/github/last-commit/icepy/chrome-overapi.svg)
 
-提供快速访问 API 文档浏览的 chrome extension，前端 first。
+提供快速访问 API 文档浏览的 chrome extension -> 前端 first。
 
 ## Install
 
