@@ -1,0 +1,8 @@
+.content-container{
+  padding: 10px;
+  height: 353px; 
+}
+.content-scroll {
+  overflow-y: auto;
+  overflow-x: hidden;
+}

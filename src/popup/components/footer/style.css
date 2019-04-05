@@ -1,0 +1,17 @@
+.footer-container{
+  background: #f0f0f0;
+  height: 30px;
+}
+
+.footer-pd{
+  height: 30px;
+  padding: 0px 10px 0 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.footer-pd a{
+  color: #4285f4;
+}
