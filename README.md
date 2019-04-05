@@ -25,3 +25,9 @@ production
 ```bash
 $ npm run build
 ```
+
+## LICENSE
+
+MIT License
+
+Copyright (c) 2019 子曰五溪
