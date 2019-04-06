@@ -1,8 +1,39 @@
 .content-container{
   padding: 10px;
-  height: 353px; 
-}
-.content-scroll {
   overflow-y: auto;
   overflow-x: hidden;
+  height: 353px;
+}
+.content-scroll {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.app{
+  height: 25px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  margin-right: 10px;
+  padding: 5px 0 5px 0;
+}
+
+.icon {
+  width: 25px;
+  height: 25px;
+  margin-right: 2px;
+}
+
+.icon img {
+  width: 25px;
+  height: 25px;
+}
+
+.text {
+  color:#636363;
+  font-size: 12px;
+  text-decoration: underline;
+  cursor: pointer;
 }

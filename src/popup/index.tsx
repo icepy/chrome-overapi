@@ -21,11 +21,19 @@ class App extends React.Component<{}, IState> {
   }
 
   public componentDidMount(){
-    //
+    setTimeout(() => {
+      this.setState({
+        data: apps,
+      });
+    }, 2000);
   }
 
   public renderMainContent(){
-    //
+    return (
+      <Content
+        apps={this.state.data}
+      />
+    )
   }
 
   public renderSearchContent(){
