@@ -5,6 +5,7 @@ import Header from "./components/header";
 import Content, { IApp } from "./components/content";
 import Footer from "./components/footer";
 import Menu from "./components/menu";
+import NoSearch from "./components/noSearch";
 import apps from "../apps";
 
 interface IState {
@@ -47,7 +48,7 @@ class App extends React.Component<{}, IState> {
 
   public renderNoSearchContent(){
     return (
-      <div>1234</div>
+      <NoSearch />
     )
   }
 
