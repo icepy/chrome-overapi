@@ -1,4 +1,5 @@
 .content-container{
+  width: 430px;
   padding: 10px;
   overflow-y: auto;
   overflow-x: hidden;
@@ -11,6 +12,7 @@
 }
 
 .app{
+  width: 123px;
   height: 25px;
   display: flex;
   flex-direction: row;

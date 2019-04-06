@@ -4,6 +4,7 @@ import styles from "./style.css";
 import Header from "./components/header";
 import Content, { IApp } from "./components/content";
 import Footer from "./components/footer";
+import Menu from "./components/menu";
 import apps from "../apps";
 
 interface IState {
@@ -33,15 +34,21 @@ class App extends React.Component<{}, IState> {
       <Content
         apps={this.state.data}
       />
-    )
+    );
   }
 
   public renderSearchContent(){
-    //
+    return (
+      <Content
+        apps={this.state.data}
+      />
+    );
   }
 
   public renderNoSearchContent(){
-    //
+    return (
+      <div>1234</div>
+    )
   }
 
   public renderWhich(){
@@ -62,15 +69,27 @@ class App extends React.Component<{}, IState> {
       <div className={styles["container"]}>
         <Header
           onSearchChanged={(value: string) => {
-            const result = apps.filter(v => v.name.toLocaleLowerCase().indexOf(value) > -1);
+            const result = apps.filter(v => v.name.toLocaleLowerCase().replace(/\s+/g,"").indexOf(value) > -1);
             if (result.length > 0) {
-              // 搜索结果
+              this.setState({
+                data: result,
+                which: 1
+              })
             } else {
-              // 无搜索结果
+              this.setState({
+                which: 2,
+              });
             }
           }}
         />
-        { this.renderWhich() }
+        <div className={styles["mark-container"]}>
+          <div className={styles["mark-width"]}>
+            {
+              this.renderWhich()
+            }
+          </div>
+          <Menu />
+        </div>
         <Footer />
       </div>
     )

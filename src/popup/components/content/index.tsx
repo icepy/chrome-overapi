@@ -1,6 +1,7 @@
 import * as React from "react";
 import styles from "./style.css";
 import { createTab } from "@/utils";
+import { LOGO_IMAGE } from "../../assets";
 
 export interface IApp {
   icon: string;
@@ -14,6 +15,7 @@ interface IProps {
 
 export default function Content(props: IProps){
   const { apps } = props;
+  const [ defaultIcon, setDefaultIcon] = React.useState("");
   return (
     <div className={styles["content-container"]}>
       <div className={styles["content-scroll"]}>
@@ -24,7 +26,13 @@ export default function Content(props: IProps){
                 createTab(v.url);
               }}>
                 <div className={styles["icon"]}>
-                  <img src={v.icon} alt="icon"/>
+                  <img
+                    src={defaultIcon || v.icon}
+                    alt="icon"
+                    onError={() => {
+                      setDefaultIcon(LOGO_IMAGE)
+                    }}
+                  />
                 </div>
                 <div className={styles["text"]}>
                   { v.name }

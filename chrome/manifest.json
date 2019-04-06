@@ -2,7 +2,7 @@
   "version": "0.0.1",
   "name": "OverAPI",
   "manifest_version": 2,
-  "description": "OverAPI是一个API文档浏览扩展",
+  "description": "OverAPI是一个可快速访问API文档浏览的扩展",
   "default_locale": "zh_CN",
   "browser_action": {
     "default_title": "OverAPI",

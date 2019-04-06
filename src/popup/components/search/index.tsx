@@ -1,6 +1,7 @@
 import * as React from "react";
 import styles from "./style.css";
 import debounce from "lodash/debounce";
+import { POPUP_SEARCH_PLACEHOLDER } from "../../local";
 
 type Changed = (value: string) => void;
 
@@ -23,7 +24,7 @@ export default function Search(props: IProps){
           value={value}
           type="text"
           className={styles["search-input"]}
-          placeholder="搜索项目"
+          placeholder={POPUP_SEARCH_PLACEHOLDER}
           onChange={(event: React.ChangeEvent<HTMLInputElement>) => {
             const val = event.target.value;
             setValue(val);

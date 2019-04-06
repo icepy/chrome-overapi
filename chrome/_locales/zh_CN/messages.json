@@ -1,3 +1,4 @@
 {
-  "POPUP_NAME": {"message": "OverAPI"}
+  "POPUP_NAME": {"message": "OverAPI"},
+  "POPUP_SEARCH_PLACEHOLDER": {"message": "搜索 API 项"}
 }

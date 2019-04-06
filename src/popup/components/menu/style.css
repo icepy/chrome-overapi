@@ -1,0 +1,11 @@
+.menu{
+  width: 150px;
+  height: 373px;
+  border-left: 1px solid #e7e7e7;
+}
+
+.menu-container {
+  padding: 10px;
+  font-size: 14px;
+  color: #636363;
+}
