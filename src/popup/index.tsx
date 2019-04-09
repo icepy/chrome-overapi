@@ -6,6 +6,7 @@ import Content, { IApp } from "./components/content";
 import Footer from "./components/footer";
 import Menu from "./components/menu";
 import NoSearch from "./components/noSearch";
+import Loading from "./components/loading";
 import apps from "../apps";
 
 interface IState {
@@ -27,10 +28,16 @@ class App extends React.Component<{}, IState> {
       this.setState({
         data: apps,
       });
-    }, 2000);
+    }, 1500);
   }
 
   public renderMainContent(){
+    const { data } = this.state;
+    if (data.length === 0) {
+      return (
+        <Loading />
+      );
+    }
     return (
       <Content
         apps={this.state.data}

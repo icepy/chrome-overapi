@@ -272,5 +272,10 @@ export default [
     "name": "Taro",
     "icon": "https://taro.js.org/favicon.ico",
     "url": "https://taro.js.org/"
+  },
+  {
+    "name": "Chrome APIs",
+    "icon": "https://www.google.com/images/icons/product/chrome-32.png",
+    "url": "https://developer.chrome.com/apps/api_index"
   }
 ]
