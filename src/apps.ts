@@ -277,5 +277,10 @@ export default [
     "name": "Chrome APIs",
     "icon": "https://www.google.com/images/icons/product/chrome-32.png",
     "url": "https://developer.chrome.com/apps/api_index"
+  },
+  {
+    "name": "Github APIs",
+    "icon": "https://developer.github.com/favicon.ico",
+    "url": "https://developer.github.com/"
   }
 ]
