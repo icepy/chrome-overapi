@@ -292,5 +292,10 @@ export default [
     "name": "Vue Router",
     "icon": "https://cn.vuejs.org/images/icons/favicon-32x32.png",
     "url": "https://router.vuejs.org/zh/"
+  },
+  {
+    "name": "echo web framework (go)",
+    "icon": "https://cdn.labstack.com/images/labstack-icon.png",
+    "url": "https://echo.labstack.com/"
   }
 ]
