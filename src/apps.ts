@@ -282,5 +282,15 @@ export default [
     "name": "Github APIs",
     "icon": "https://developer.github.com/favicon.ico",
     "url": "https://developer.github.com/"
+  },
+  {
+    "name": "Vuex",
+    "icon": "https://cn.vuejs.org/images/icons/favicon-32x32.png",
+    "url": "https://vuex.vuejs.org/zh/"
+  },
+  {
+    "name": "Vue Router",
+    "icon": "https://cn.vuejs.org/images/icons/favicon-32x32.png",
+    "url": "https://router.vuejs.org/zh/"
   }
 ]
