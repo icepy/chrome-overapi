@@ -13,9 +13,26 @@ interface IProps {
   apps: IApp[];
 }
 
+interface IIconImageProps {
+  icon: string;
+}
+
+const IconImage = (props: IIconImageProps) => {
+  const { icon } = props;
+  const [ defaultIcon, setDefaultIcon] = React.useState("");
+  return (
+    <img
+      src={defaultIcon || icon}
+      alt="icon"
+      onError={() => {
+        setDefaultIcon(LOGO_IMAGE)
+      }}
+    />
+  )
+}
+
 export default function Content(props: IProps){
   const { apps } = props;
-  const [ defaultIcon, setDefaultIcon] = React.useState("");
   return (
     <div className={styles["content-container"]}>
       <div className={styles["content-scroll"]}>
@@ -26,12 +43,8 @@ export default function Content(props: IProps){
                 createTab(v.url);
               }}>
                 <div className={styles["icon"]}>
-                  <img
-                    src={defaultIcon || v.icon}
-                    alt="icon"
-                    onError={() => {
-                      setDefaultIcon(LOGO_IMAGE)
-                    }}
+                  <IconImage
+                    icon={v.icon}
                   />
                 </div>
                 <div className={styles["text"]}>
