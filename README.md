@@ -4,7 +4,7 @@
 
 OverAPI 是一个可快速访问API文档浏览的扩展 -> 前端 first !!!
 
-![img](./overapi.gif)
+![img](./overapis.gif)
 
 ## Install
 
