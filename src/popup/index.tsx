@@ -2,7 +2,7 @@ import * as React from "react";
 import * as ReactDOM from "react-dom";
 import styles from "./style.css";
 import Header from "./components/header";
-import Content, { IApp } from "./components/content";
+import Content, { IApp, SearchContent } from "./components/content";
 import Footer from "./components/footer";
 import Menu from "./components/menu";
 import NoSearch from "./components/noSearch";
@@ -24,6 +24,10 @@ class App extends React.Component<{}, IState> {
   }
 
   public componentDidMount(){
+    this.initSetApps();
+  }
+
+  public initSetApps(){
     setTimeout(() => {
       this.setState({
         data: apps,
@@ -47,7 +51,7 @@ class App extends React.Component<{}, IState> {
 
   public renderSearchContent(){
     return (
-      <Content
+      <SearchContent
         apps={this.state.data}
       />
     );
@@ -77,6 +81,14 @@ class App extends React.Component<{}, IState> {
       <div className={styles["container"]}>
         <Header
           onSearchChanged={(value: string) => {
+            if (!value){
+              this.setState({
+                data: [],
+                which: 0
+              });
+              this.initSetApps();
+              return;
+            }
             const result = apps.filter(v => v.name.toLocaleLowerCase().replace(/\s+/g,"").indexOf(value) > -1);
             if (result.length > 0) {
               this.setState({

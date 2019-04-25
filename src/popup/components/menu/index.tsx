@@ -7,7 +7,7 @@ export default function Menu(){
   return (
     <div className={styles["menu"]}>
       <div className={styles["menu-container"]}>
-        {POPUP_CASE_1}{apps.length}{POPUP_CASE_2}
+        {POPUP_CASE_1}<strong>{apps.length}</strong>{POPUP_CASE_2}
       </div>
     </div>
   );

@@ -297,5 +297,25 @@ export default [
     "name": "echo web framework (go)",
     "icon": "https://cdn.labstack.com/images/labstack-icon.png",
     "url": "https://echo.labstack.com/"
+  },
+  {
+    "name": "Ant Design Mobile",
+    "icon": "https://zos.alipayobjects.com/rmsportal/wIjMDnsrDoPPcIV.png",
+    "url": "https://mobile.ant.design/index-cn"
+  },
+  {
+    "name": "yarn",
+    "icon": "https://yarnpkg.com/favicon.ico",
+    "url": "https://yarnpkg.com/zh-Hant/"
+  },
+  {
+    "name": "Materialize",
+    "icon": "https://materializecss.com/images/favicon/favicon-32x32.png",
+    "url": "https://materializecss.com/"
+  },
+  {
+    "name": "babel",
+    "icon": "https://babeljs.io/img/favicon.png",
+    "url": "https://babeljs.io/"
   }
 ]

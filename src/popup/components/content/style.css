@@ -5,6 +5,11 @@
   overflow-x: hidden;
   height: 353px;
 }
+
+.title{
+  color:#636363;
+}
+
 .content-scroll {
   display: flex;
   flex-direction: row;
@@ -25,7 +30,7 @@
 .icon {
   width: 25px;
   height: 25px;
-  margin-right: 2px;
+  margin-right: 5px;
 }
 
 .icon img {

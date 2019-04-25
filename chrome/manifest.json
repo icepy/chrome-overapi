@@ -1,5 +1,5 @@
 {
-  "version": "0.0.1",
+  "version": "1.0.0",
   "name": "OverAPI",
   "manifest_version": 2,
   "description": "OverAPI是一个可快速访问API文档浏览的扩展",

@@ -1,7 +1,9 @@
 {
   "POPUP_NAME": {"message": "OverAPI"},
-  "POPUP_SEARCH_PLACEHOLDER": {"message": "搜索 API 项"},
+  "POPUP_SEARCH_PLACEHOLDER": {"message": "搜索文档"},
   "POPUP_CASE_1": {"message": "收录"},
-  "POPUP_CASE_2": {"message": "个 API 文档"},
-  "POPUP_NO_SEARCH_RESULT": {"message": "🔍 暂无搜索结果"}
+  "POPUP_CASE_2": {"message": "个文档"},
+  "POPUP_NO_SEARCH_RESULT": {"message": "🔍 暂无搜索结果"},
+  "POPUP_COMMONLY_USED": {"message": "常用"},
+  "POPUP_APPS": {"message": "集合"}
 }
