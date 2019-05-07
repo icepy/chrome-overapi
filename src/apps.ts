@@ -110,7 +110,7 @@ export default [
   },
   {
     "name": "classnames",
-    "icon": "http://necolas.github.io/normalize.css/favicon.ico",
+    "icon": "https://github.githubassets.com/favicon.ico",
     "url": "https://github.com/JedWatson/classnames"
   },
   {
@@ -317,5 +317,20 @@ export default [
     "name": "babel",
     "icon": "https://babeljs.io/img/favicon.png",
     "url": "https://babeljs.io/"
+  },
+  {
+    "name": "react-window",
+    "icon": "https://github.githubassets.com/favicon.ico",
+    "url": "https://react-window.now.sh/#/examples/list/fixed-size"
+  },
+  {
+    "name": "Java APIs doc",
+    "icon": "https://docs.oracle.com/favicon.ico",
+    "url": "https://docs.oracle.com/en/java/javase/12/docs/api/index.html"
+  },
+  {
+    "name": "Spring",
+    "icon": "https://spring.io/img/favicon-ca31b78daf0dd9a106bbf3c6d87d4ec7.png",
+    "url": "https://spring.io/"
   }
 ]

@@ -38,7 +38,8 @@ const COMMONLYUSED = [
   "node.js",
   "flutter",
   "dart",
-  "mdn"
+  "mdn",
+  "java apis doc"
 ];
 
 interface ICommonlyApp {
